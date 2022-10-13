@@ -706,49 +706,62 @@ console.log(user.name)
 console.log(user)
 
 
+
+
+console.log('\n\n=================Requirements Complete! Hungry for More?================\n\n')
+
+
+
+console.log('\n\n=================Cat Combinator==============\n\n')
+
+
+
+console.log('\n\n====================1. Mama cat=================\n\n')
+//Define an object called cat1 that contains the following properties:
+
+const cat1 = {
+    name: 'Mrs. Kitty',
+    breed: 'Persian',
+    age: 2
+};
+console.log(cat1)
+console.log(cat1.age)
+console.log(cat1.breed)
+
+console.log('\n\n===================================\n\n')
+
+console.log('\n\n====================2. Papa cat===================\n\n')
+//Define an object called cat2that also contains the properties:
+const cat2 = {
+    name: 'Mr. Pickles',
+    breed: 'Mixed',
+    age: 10
+}
+console.log(cat2)
+
+console.log('\n\n====================3. Combine Cats!====================\n\n')
+//The cats are multiplying!
+
+//Write a function combineCats that has two parameters mama, and papa. The function will take two arguments -- each a cat object.
+
+//Pass cat1 and cat2 as arguments to the combineCatsfunction. The function should console.log them.
+//Example:
+
+function combineCats(mama, papa) {
+    console.log(mama)
+    console.log(papa)
+
+    const interBreedOffspring = {
+        name: mama.name + papa.name,
+        age: 1,
+        breed: (mama.breed) + "-" + (papa.breed)
+    }
+    return interBreedOffspring
+}
+console.log(combineCats(cat1, cat2))
+
+
 /*
-
-Requirements Complete! Hungry for More?
-
-
-
-Cat Combinator
-
-
-
-1. Mama cat
-Define an object called cat1that contains the following properties:
-
-name
-breed
-age (a number)
-console.log the cat's age
-console.log the cat's breed
-
-
-
-2. Papa cat
-Define an object called cat2that also contains the properties:
-
-name
-breed
-age (a number)
-
-
-
-3. Combine Cats!
-The cats are multiplying!
-
-Write a function combineCatsthat has two parameters mama, and papa. The function will take two arguments -- each a cat object.
-
-Pass cat1and cat2as arguments to the combineCatsfunction. The function should console.log them.
-Example:
-
-combineCats(cat1, cat2)
-{ name: "Joe", age: 19, breed: "Mog" }
-
-{ name: "Jam", age: 45, breed: "Siamese" }
-
 This is to demonstrate that functions can take objects as arguments
 
 You could also invoke the combineCatsfunction by writing the objects straight into the parentheses:
